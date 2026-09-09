@@ -21,10 +21,10 @@ load_dotenv()
 
 app = Flask(__name__)
 
-# --- Core config -----------------------------------------------------------
+# Core config
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "dev-secret-change-me")
 
-# --- Mail config -------------------------------------------------------------
+# Mail config
 app.config["MAIL_SERVER"] = os.environ.get("MAIL_SERVER", "smtp.gmail.com")
 app.config["MAIL_PORT"] = int(os.environ.get("MAIL_PORT", 587))
 app.config["MAIL_USE_TLS"] = os.environ.get("MAIL_USE_TLS", "True") == "True"
@@ -43,14 +43,14 @@ mail = Mail(app)
 
 # Site-wide content used across templates (edit this to make it yours).
 SITE = {
-    "name": "Maya Banda",
+    "name": "Gomezgani Mlowoka",
     "role": "Freelance Copy Specialist",
     "tagline": "Words that work as hard as your brand does.",
-    "email": "hello@mayabanda.com",
-    "handle": "@mayabanda",
+    "email": "gomezganimlowoka95@gmail.com",
+    "handle": "@gomezganimlowoka",
     "bio": (
-        "Maya Banda is a freelance copywriter with over 4 years of "
-        "experience specialising in copywriting and content strategy "
+        "Gomezgani Mlowoka is a software developer with over 2 years of "
+        "experience specialising in machine learning, web development, and data analysis. He has a proven track record of "
         "for brands and organisations across Southern Africa."
     ),
 }
