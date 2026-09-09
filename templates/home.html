@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow-tag">Freelance <span class="circle-word">copy</span> specialist</p>
+
+    <h1 class="hero-title">
+      <span class="name-badge">
+        <svg class="scribble-circle" viewBox="0 0 220 100" aria-hidden="true">
+          <path d="M20,55 C10,25 55,8 110,10 C170,12 210,30 205,55 C200,82 150,92 100,90 C45,88 12,78 20,55 Z" />
+        </svg>
+        {{ site.name.split(' ')[0] }}
+      </span>
+      <span class="rotated-tag">{{ site.name.split(' ')[1] if ' ' in site.name else '' }}</span>
+    </h1>
+
+    <p class="hero-lede">{{ site.tagline }}</p>
+
+    <div class="hero-actions">
+      <a class="btn btn-solid" href="{{ url_for('contact') }}">Start a project</a>
+      <a class="btn btn-outline" href="{{ url_for('service') }}">See services</a>
+    </div>
+  </div>
+
+  <div class="hero-photo" role="img" aria-label="Portrait photo placeholder">
+    <span>Add your photo here</span>
+  </div>
+</section>
+
+<section class="work-intro">
+  <div class="photo-strip" role="img" aria-label="Workspace photo placeholder">
+    <span>Workspace photo</span>
+  </div>
+
+  <div class="work-copy">
+    <h2 class="section-title">My <span class="circle-word">work</span></h2>
+    <p>{{ site.bio }}</p>
+
+    <ul class="highlight-list">
+      <li>
+        <span class="star" aria-hidden="true">✳</span>
+        <div>
+          <p class="highlight-title">Place the title of your project here</p>
+          <p class="highlight-note">Add a line or two here to bring it to life — a brief summary of the project you worked on.</p>
+        </div>
+      </li>
+      <li>
+        <span class="star" aria-hidden="true">✳</span>
+        <div>
+          <p class="highlight-title">Zine publishing</p>
+          <p class="highlight-note">September 2025 · Creative Excellence 2023 Awards · CX'25 Awarded Best Copywriting, Advertising, Media &amp; PR</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="services-teaser">
+  <h2 class="section-title">Services I <span class="circle-word">offer</span></h2>
+  <div class="service-grid">
+    <a class="service-card" href="{{ url_for('service') }}">
+      <span class="service-icon" aria-hidden="true">✎</span>
+      <p class="service-name">Feature articles</p>
+      <p class="service-desc">Whether for print or digital content.</p>
+    </a>
+    <a class="service-card" href="{{ url_for('service') }}">
+      <span class="service-icon" aria-hidden="true">💬</span>
+      <p class="service-name">Media writing</p>
+      <p class="service-desc">For advertisements or scripts.</p>
+    </a>
+    <a class="service-card" href="{{ url_for('service') }}">
+      <span class="service-icon" aria-hidden="true">🔍</span>
+      <p class="service-name">SEO content</p>
+      <p class="service-desc">Targeted to improve your search traffic.</p>
+    </a>
+    <a class="service-card" href="{{ url_for('service') }}">
+      <span class="service-icon" aria-hidden="true">🖥</span>
+      <p class="service-name">Web content</p>
+      <p class="service-desc">Websites, emails and social media.</p>
+    </a>
+  </div>
+</section>
+
+<section class="cta-band">
+  <p class="cta-text">Have a project in mind?</p>
+  <a class="btn btn-solid" href="{{ url_for('contact') }}">Let's talk</a>
+</section>
+
+{% endblock %}

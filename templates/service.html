@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Services — {{ site.name }}{% endblock %}
+{% block content %}
+
+<section class="page-header">
+  <p class="eyebrow-tag">What I do</p>
+  <h1 class="page-title">Services I <span class="circle-word">offer</span></h1>
+  <p class="page-lede">Copy that reads like a person wrote it, built to move real business goals — from search rankings to sales.</p>
+</section>
+
+<section class="service-list">
+
+  <article class="service-row">
+    <span class="service-icon-lg" aria-hidden="true">✎</span>
+    <div>
+      <h2>Feature articles</h2>
+      <p>Long-form storytelling for print or digital publications — profiles, explainers and thought-leadership pieces that hold a reader's attention from the first line to the last.</p>
+    </div>
+  </article>
+
+  <article class="service-row">
+    <span class="service-icon-lg" aria-hidden="true">💬</span>
+    <div>
+      <h2>Media writing</h2>
+      <p>Scripts and copy for adverts, radio spots and video, written to be heard and watched, not just read.</p>
+    </div>
+  </article>
+
+  <article class="service-row">
+    <span class="service-icon-lg" aria-hidden="true">🔍</span>
+    <div>
+      <h2>SEO content</h2>
+      <p>Search-optimised articles and landing pages that bring the right readers in and keep them on the page — built around real keyword research, not keyword stuffing.</p>
+    </div>
+  </article>
+
+  <article class="service-row">
+    <span class="service-icon-lg" aria-hidden="true">🖥</span>
+    <div>
+      <h2>Web content</h2>
+      <p>Website copy, email sequences and social captions that keep one consistent voice across every touchpoint.</p>
+    </div>
+  </article>
+
+</section>
+
+<section class="cta-band">
+  <p class="cta-text">Not sure which service fits your project?</p>
+  <a class="btn btn-solid" href="{{ url_for('contact') }}">Tell me about it</a>
+</section>
+
+{% endblock %}
