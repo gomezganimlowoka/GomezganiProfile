@@ -5,40 +5,48 @@
 <section class="page-header">
   <p class="eyebrow-tag">What I do</p>
   <h1 class="page-title">Services I <span class="circle-word">offer</span></h1>
-  <p class="page-lede">Copy that reads like a person wrote it, built to move real business goals — from search rankings to sales.</p>
+  <p class="page-lede">Let me help you bring your ideas to life with custom software solutions.</p>
 </section>
 
 <section class="service-list">
 
   <article class="service-row">
-    <span class="service-icon-lg" aria-hidden="true">✎</span>
+    <image class="service-icon-lg" aria-hidden="true"/ src="{{ url_for('static', filename='images/android.png') }}" alt="Android Application development icon">
     <div>
-      <h2>Feature articles</h2>
-      <p>Long-form storytelling for print or digital publications — profiles, explainers and thought-leadership pieces that hold a reader's attention from the first line to the last.</p>
+      <h2>Android Application development</h2>
+      <p>Building robust and user-friendly Android applications tailored to your business needs.</p>
     </div>
   </article>
 
   <article class="service-row">
-    <span class="service-icon-lg" aria-hidden="true">💬</span>
+    <image class="service-icon-lg" aria-hidden="true"/ src="{{ url_for('static', filename='images/web.png') }}" alt="Web Application Development icon">
     <div>
-      <h2>Media writing</h2>
-      <p>Scripts and copy for adverts, radio spots and video, written to be heard and watched, not just read.</p>
+      <h2>Web Application Development</h2>
+      <p>Building responsive and scalable web applications tailored to your business needs.</p>
     </div>
   </article>
 
   <article class="service-row">
-    <span class="service-icon-lg" aria-hidden="true">🔍</span>
+    <image class="service-icon-lg" aria-hidden="true"/ src="{{ url_for('static', filename='images/ML.png') }}" alt="Machine Learning Application icon">
     <div>
-      <h2>SEO content</h2>
-      <p>Search-optimised articles and landing pages that bring the right readers in and keep them on the page — built around real keyword research, not keyword stuffing.</p>
+      <h2>Machine Learning Application</h2>
+      <p>Building intelligent machine learning applications tailored to your business needs.</p>
     </div>
   </article>
 
   <article class="service-row">
-    <span class="service-icon-lg" aria-hidden="true">🖥</span>
+    <image class="service-icon-lg" aria-hidden="true"/ src="{{ url_for('static', filename='images/data.png') }}" alt="Data Analysis icon">
     <div>
-      <h2>Web content</h2>
-      <p>Website copy, email sequences and social captions that keep one consistent voice across every touchpoint.</p>
+      <h2>Data Analysis</h2>
+      <p>Extracting insights from complex datasets to inform strategic business decisions.</p>
+    </div>
+  </article>
+  <article class="service-row">
+    <image class="service-icon-lg" aria-hidden="true"/ src="{{ url_for('static', filename='images/train.png') }}" alt="Digital Training icon">
+    <div>
+      <h2>Digital Training</h2>
+      <p>Providing comprehensive digital training programs to enhance your team's skills and knowledge working with
+        technologies.</p>
     </div>
   </article>
 
@@ -46,7 +54,7 @@
 
 <section class="cta-band">
   <p class="cta-text">Not sure which service fits your project?</p>
-  <a class="btn btn-solid" href="{{ url_for('contact') }}">Tell me about it</a>
+  <a class="btn btn-solid" href="{{ url_for('main.contact') }}">Tell me about it</a>
 </section>
 
 {% endblock %}
